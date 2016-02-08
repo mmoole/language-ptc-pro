@@ -1,0 +1,14 @@
+# general settings:
+".ptc-config.source":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
+    softWrapHangingIndent: 1
+    commentStart: "# "
+#specialized settings:
+#"pro.ptc-config.source":
+#  editor:
+#    autoIndent: true
+#    autoIndentOnPaste: true
+#    softWrapHangingIndent: 1
+#    commentStart: "# "

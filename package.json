@@ -1,0 +1,23 @@
+{
+  "name": "language-ptc-pro",
+  "version": "0.0.1",
+  "description": "PTC Creo Configuration Files",
+  "keywords": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmoole/language-ptc-pro.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "readme": "# PTC Creo Configuration Files package\n\nThis package adds [Atom](https://atom.io/) support for PTC Creo Configuration Files.",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/mmoole/language-ptc-pro/issues"
+  },
+  "homepage": "https://github.com/mmoole/language-ptc-pro#readme"
+}
