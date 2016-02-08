@@ -1,0 +1,25 @@
+fileTypes: [
+  "mcn"
+]
+# foldingStartMarker: "\\{\\s*$"
+# foldingStopMarker: "^\\s*\\}"
+name: "PTC ModelCheck .mcn"
+scopeName: "source.ptc-config.mcn"
+patterns: [
+  {
+    comment: "Configuration Options for Constant Configuration Files .mcn"
+    match: "^\\b(?i:(ACCURACY_LOW|ACCURACY_UPP|BOUND_ANGLE_MIN|BOUND_CRV_INT_TOL|BOUND_CRV_SRF_TOL|CURV_CONT_TOL3|CURVATURE_RAD_TOL|DIST_VERT_EDGE_TOL|DIST_VERT_FACE_TOL|ID_DRW_ELMNT_TOL|ID_ELMNT_TOL|KNIFE_EDGE_TOL|KNOT_TOL|MAX_ABS_ACCURACY|MAX_DRAW_SHEETS|MAX_SKETCH_ITEMS|MCSI1_TOL|MCSI2_TOL|MCSI3_TOL|MCSI4_TOL|MCSI5_TOL|MIN_ABS_ACCURACY|MIN_TOLERANCE|NUM_SEGMENT_TOL|PARENT_DIFF_MAX|PERC_EARLY_CHAMF|PERC_EARLY_COSMETIC|PERC_EARLY_DRAFT|PERC_EARLY_ROUND|POLYN_DEG_TOL|POS_CONT_TOL1|RC_PARAMETER_NAME|SELF_DIST_TOL|SHARP_ANGLE|SHORT_EDGE|SHORT_EDGE_BATCH|SMALL_RADIUS|TANG_CONT_TOL2|TINY_DRW_ELMNT_TOL|TINY_ELMNT_AREA_TOL|TINY_ELMNT_TOL|TINY_SEGMENT_TOL))\\b"
+    name: "keyword.other.start.mcn"
+  },
+  {
+    comment: "Hidden Configuration Options for Constant Configuration Files .mcn"
+    match: "^\\b(?i:(HIDDENSOMETHING))\\b"
+    name: "keyword.other.start.hidden.mcn"
+  },
+  {
+    include: "source.ptc-config"
+  },
+  {
+    include: "source.ptc-config-modelcheck"
+  }
+]

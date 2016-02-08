@@ -1,0 +1,57 @@
+# This includes settings that are common to all these configuration file types:
+fileTypes: [
+  "pro"
+  "sup"
+  "dtl"
+  "mc"
+  "mcc"
+  "mch"
+  "mcn"
+  "mcq"
+  "mcs"
+  "mcg"
+  "txt"
+]
+name: "PTC-config various"
+scopeName: "source.ptc-config"
+patterns: [
+  {
+    match: "^(#|!).*$"
+    name: "comment.pro"
+  },
+  # numbers and strings highlighting adapted from python package
+  {
+    match: '\\b(?i:(\\d+\\.\\d*(e[\\-\\+]?\\d+)?))(?=[^a-zA-Z_])'
+    name: 'constant.numeric.float.pro'
+  },
+  {
+    match: '(?<=[^0-9a-zA-Z_])(?i:(\\.\\d+(e[\\-\\+]?\\d+)?))'
+    name: 'constant.numeric.float.pro'
+  },
+  {
+    match: '\\b(?i:(\\d+e[\\-\\+]?\\d+))'
+    name: 'constant.numeric.float.pro'
+  },
+  {
+    match: '\\b(?i:([1-9]+[0-9]*|0)L)'
+    name: 'constant.numeric.integer.long.decimal.pro'
+  },
+  {
+    match: '\\b([1-9]+[0-9]*|0)'
+    name: 'constant.numeric.integer.decimal.pro'
+  },
+  {
+    match: '\\b(?i:(Yes|No|True|False))\\b'
+    name: 'constant.pro'
+  },
+  {
+    match: '(?i:(\%([\w\d]+)\%))'
+    name: 'constant.storage.type.string.variable.parameter.pro'
+  },
+#  {
+#    comment: 'path for files or folders'
+#    match: '\\b(?:i([\w]\:|\\)(\\[a-z_\-\s0-9\.]+)+\.(dtl|prt|asm|drw|html)$)\\b'    # FIXME this gives errors:
+#    name: 'storage.type.string.file.folder.path.pro'
+#  },
+
+]

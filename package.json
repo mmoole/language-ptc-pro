@@ -14,7 +14,6 @@
   },
   "dependencies": {
   },
-  "readme": "# PTC Creo Configuration Files package\n\nThis package adds [Atom](https://atom.io/) support for PTC Creo Configuration Files.",
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/mmoole/language-ptc-pro/issues"

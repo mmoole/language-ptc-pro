@@ -1,0 +1,19 @@
+# This includes settings that are common to all these configuration file types:
+fileTypes: [
+  "mc"
+  "mcc"
+  "mch"
+  "mcs"
+  "mcn"
+  "mcq"
+  "mcg"
+  "txt"
+]
+name: "PTC-config ModelCheck"
+scopeName: "source.ptc-config-modelcheck"
+patterns: [
+  {
+    match: '\\b(?i:(EQ|GTE|LTE))\\b'
+    name: 'operator.meta.class.pro'
+  }
+]

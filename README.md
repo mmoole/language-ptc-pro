@@ -8,9 +8,10 @@ Still at its early steps, feel free to add your thoughts.
 
 ## Notes
 
-The package currently supports lines that begin with `#` as comments.
+The package currently supports lines that begin with `#` and `!` as comments.
 
 Be aware that Creo mostly needs configuration files encoded not in UTF-8 but in ANSI.
+In Atom you can use the package [auto-encoding](https://atom.io/packages/auto-encoding) to make it automatically detect and not assume UTF-8.
 
 ## How to install
 
@@ -23,10 +24,18 @@ Based on / Thanks a lot to
   * [npp-pro by VonOx](https://github.com/VonOx/npppro) Config.pro highlighting for Notepad++
   * The folks at Atom.io for various code snippets
 
+## Language support
+
+  ▶︎ config.pro, supports mapkey folding  
+  ▶︎ detail.dtl  
+  ▶︎ modelcheck files  
+  ☐ trail files  
+  ☐ ...   
+  ☐ more detailed highlighting     
 
 ## Copyright
 
-Copyright &copy; 2016+ by Sven Rothe. See [LICENSE](https://github.com/xxyyxx/language-ptc-pro/blob/master/LICENSE.md) for details.
+Copyright &copy; 2016+ by Sven Rothe. See [LICENSE](https://github.com/mmoole/language-ptc-pro/blob/master/LICENSE.md) for details.
 
 This project is not affiliated with or endorsed by PTC.
 All trademarks and copyrights are the property of their respective owners.

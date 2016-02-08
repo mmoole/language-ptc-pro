@@ -1,0 +1,37 @@
+fileTypes: [
+  "mcc"
+]
+# foldingStartMarker: "\\{\\s*$"
+# foldingStopMarker: "^\\s*\\}"
+name: "PTC ModelCheck .mcc"
+scopeName: "source.ptc-config.mcc"
+patterns: [
+  {
+    comment: "Configuration Options for condition.mcc"
+    match: "\\b(?i:(USERNAME|GROUPNAME|MODELNAME|FT_GENERIC_PRT|T_GENERIC_ASM|FT_INSTANCE_PRT|FT_INSTANCE_ASM|MODEL_UNIT|PRO_VERSION|DATE_CREATED|MODEL_TYPE))\\b"
+    name: "keyword.other.start.mc"
+  },
+  {
+    match: '\\b(?i:(PRT_SOLID|PRT_SHEETMETAL|PRT_SKELETON|PRT_PIPE|PRT_HARNESS|ASM_DESIGN|ASM_INTERCHANGE|ASM_MOLD_LAYOUT))\\b'
+    name: 'string.quoted.single.mcc'
+  },
+  {
+    match: '\\b(?i:(NOCHECK))\\b'
+    name: 'important.function.variable.mcc'
+  },
+  {
+    match: '\\b(?i:(If|Else|AND|Or))\\b'
+    name: 'constant.mcc'
+  },
+  {
+    comment: "Hidden Configuration Options for condition.mcc"
+    match: "\\b(?i:(HIDDENSOMETHING))\\b"
+    name: "keyword.other.start.hidden.mcc"
+  },
+  {
+    include: "source.ptc-config"
+  },
+  {
+    include: "source.ptc-config-modelcheck"
+  }
+]

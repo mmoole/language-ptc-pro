@@ -1,0 +1,18 @@
+fileTypes: [
+  "mcq"
+]
+# foldingStartMarker: "\\{\\s*$"
+# foldingStopMarker: "^\\s*\\}"
+name: "PTC ModelCheck .mcq"
+scopeName: "source.ptc-config.mcq"
+patterns: [
+  {
+    comment: "Configuration Options for Status Configuration Files .mcq"
+    match: "^\\b(?i:(GREEN|YELLOW))\\b"
+    name: "keyword.other.start.mcq"
+  },
+  {
+    match: "[0-9]+(E|W)(,[0-9]+(E|W))?"
+    name: "variable.parameter.entity.name.type.pro"
+  }
+]
