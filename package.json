@@ -1,9 +1,8 @@
 {
   "name": "language-ptc-pro",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "PTC Creo Configuration Files",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmoole/language-ptc-pro.git"
@@ -12,8 +11,7 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/mmoole/language-ptc-pro/issues"
