@@ -2,7 +2,11 @@
   "name": "language-ptc-pro",
   "version": "0.1.0",
   "description": "PTC Creo Configuration Files",
-  "keywords": [],
+  "keywords": [
+    "language",
+    "grammar",
+    "Creo"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mmoole/language-ptc-pro.git"
