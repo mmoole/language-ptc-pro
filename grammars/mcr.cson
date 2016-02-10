@@ -1,0 +1,25 @@
+fileTypes: [
+  "mcr"
+]
+# foldingStartMarker: "\\{\\s*$"
+# foldingStopMarker: "^\\s*\\}"
+name: "PTC ModelCheck .mcr"
+scopeName: "source.ptc-config.mcr"
+patterns: [
+  {
+    comment: "Error definition"
+    match: "^\\b(?i:(E\:))\\b"
+    name: "error.mcr"
+  },
+  {
+    comment: "Warning definition"
+    match: "^\\b(?i:(W\:))\\b"
+    name: "warning.mcr"
+  },
+  {
+    include: "source.ptc-config"
+  },
+  {
+    include: "source.ptc-config-modelcheck"
+  }
+]

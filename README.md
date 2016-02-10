@@ -1,5 +1,7 @@
 # PTC Creo Configuration Files Language
 
+[![Build Status](https://travis-ci.org/mmoole/language-ptc-pro.svg?branch=master)](https://travis-ci.org/mmoole/language-ptc-pro)
+
 Provides basic syntax highlighting for configuration files for Creo Parametric (formerly Pro/Engineer) and Creo Simulate.
 
 Still at its early steps, feel free to add your thoughts.

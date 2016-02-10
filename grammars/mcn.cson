@@ -13,7 +13,7 @@ patterns: [
   },
   {
     comment: "Hidden Configuration Options for Constant Configuration Files .mcn"
-    match: "^\\b(?i:(HIDDENSOMETHING))\\b"
+    match: "^\\b(?i:(GLOBAL_INTF_DAYS))\\b"
     name: "keyword.other.start.hidden.mcn"
   },
   {

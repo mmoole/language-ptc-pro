@@ -1,19 +1,25 @@
 # This includes settings that are common to all these configuration file types:
 fileTypes: [
-  "mc"
-  "mcc"
-  "mch"
-  "mcs"
-  "mcn"
-  "mcq"
-  "mcg"
-  "txt"
 ]
 name: "PTC-config ModelCheck"
 scopeName: "source.ptc-config-modelcheck"
 patterns: [
   {
-    match: '\\b(?i:(EQ|GTE|LTE))\\b'
-    name: 'operator.meta.class.pro'
+    match: "^(#|!).*$"
+    name: "comment.pro"
+  },
+  {
+    match: '\\b(?i:(EQ|NEQ|GTE|LTE))\\b'
+    name: 'keyword.operator.comparison.pro'
+  },
+  {
+    comment: 'Placeholders used in ModelCHECK'
+    match: '([\$|\#|\?|\*]+)'
+    name: 'keyword.operator.placeholder.pro'
+  }
+  {
+    comment: 'list prefix for lists of values'
+    match: '(LIST_)'
+    name: 'support.function.magic.pro'
   }
 ]

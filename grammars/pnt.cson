@@ -1,0 +1,24 @@
+fileTypes: [
+  "pnt"
+]
+# foldingStartMarker: ""
+# foldingStopMarker: "^\\s*\\}"
+name: "PTC pentable.pnt"
+scopeName: "source.ptc-config.pnt"
+patterns: [
+  {
+    match: "^\\b(?i:(pen\ [1-8]))\\b"
+    name: "keyword.other.start.pnt"
+  },
+  {
+    match: "\\b(?i:(color|thickness))\\b"
+    name: "entity.name.function.pnt"
+  },
+  {
+    match: "\\b(?i:(cm|in))\\b"
+    name: "unit.variable.parameter.function.pnt"
+  },
+  {
+    include: "source.ptc-config"
+  }
+]

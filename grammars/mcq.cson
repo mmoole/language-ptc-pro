@@ -8,8 +8,13 @@ scopeName: "source.ptc-config.mcq"
 patterns: [
   {
     comment: "Configuration Options for Status Configuration Files .mcq"
-    match: "^\\b(?i:(GREEN|YELLOW))\\b"
-    name: "keyword.other.start.mcq"
+    match: "^\\b(?i:(GREEN))\\b"
+    name: "keyword.other.green.mcq"
+  },
+  {
+    comment: "Configuration Options for Status Configuration Files .mcq"
+    match: "^\\b(?i:(YELLOW))\\b"
+    name: "keyword.other.yellow.mcq"
   },
   {
     match: "[0-9]+(E|W)(,[0-9]+(E|W))?"

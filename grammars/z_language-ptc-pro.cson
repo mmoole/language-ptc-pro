@@ -1,16 +1,5 @@
 # This includes settings that are common to all these configuration file types:
 fileTypes: [
-  "pro"
-  "sup"
-  "dtl"
-  "mc"
-  "mcc"
-  "mch"
-  "mcn"
-  "mcq"
-  "mcs"
-  "mcg"
-  "txt"
 ]
 name: "PTC-config various"
 scopeName: "source.ptc-config"
@@ -42,7 +31,7 @@ patterns: [
   },
   {
     match: '\\b(?i:(Yes|No|True|False))\\b'
-    name: 'constant.pro'
+    name: 'constant.boolean.pro'
   },
   {
     match: '(?i:(\%([\w\d]+)\%))'
