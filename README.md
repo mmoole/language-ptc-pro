@@ -31,9 +31,10 @@ Based on / Thanks a lot to
   ▶︎ config.pro, supports mapkey folding  
   ▶︎ detail.dtl  
   ▶︎ modelcheck files  
-  ☐ trail files  
-  ☐ ...   
-  ☐ more detailed highlighting     
+  ▶︎ trail files  
+  ▶︎ xconf files (built-in xml)   
+  … ...   
+  … more detailed highlighting     
 
 ## Copyright
 

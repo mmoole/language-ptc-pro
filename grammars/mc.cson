@@ -13,7 +13,7 @@ patterns: [
   },
   {
     comment: "Hidden Configuration Options for config_init.mc"
-    match: "^\\b(?i:(INTRALINK_DUPINFO|ILNK_MC_SRCH_SCRPT|ILNK_MC_PRVW_SCRPT|ILNK_MC_DUP_FLDR|MCREGEN_CONFIRM|MC_PROCESS_COMPONENT_FIRST|))\\b"
+    match: "^\\b(?i:(INTRALINK_DUPINFO|ILNK_MC_SRCH_SCRPT|ILNK_MC_PRVW_SCRPT|ILNK_MC_DUP_FLDR|MCREGEN_CONFIRM|MC_PROCESS_COMPONENT_FIRST))\\b"
     name: "keyword.other.start.hidden.mc"
   },
   {

@@ -1,0 +1,33 @@
+fileTypes: [
+  "txt.1"
+  "txt.2"
+  "txt.3"
+  "txt.4"
+  "txt.5"
+  "txt.6"
+  "txt.7"
+  "txt.8"
+  "txt.9"
+  "txt.10"
+]
+# This grammar need to be selected from the language menu since trail files mostly have .txt as file extension.
+
+# foldingStartMarker: ""
+# foldingStopMarker: "^\\s*\\}"
+name: "PTC Creo Trail File"
+scopeName: "source.ptc-config.trail"
+patterns: [
+  {
+    comment: "messages"
+    match: "^\!\%CI.*"
+    name: "string.quoted.single.single-line.trail"
+  },
+  {
+    comment: "UI keywords"
+    match: "\`.*?\`"
+    name: "keyword.function.entity.ui.trail"
+  },
+  {
+    include: "source.ptc-config"
+  }
+]
