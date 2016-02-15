@@ -23,7 +23,7 @@ Open Atom and go to `File` → `Settings` → `Install`  and search for **langua
 
 Based on / Thanks a lot to
   * [Olaf Corten](http://www.proesite.com/) for his all complete list of config.pro Options
-  * [npp-pro by VonOx](https://github.com/VonOx/npppro) Config.pro highlighting for Notepad++
+  * [npp-pro by VonOx](https://github.com/VonOx/npp-pro) Config.pro highlighting for Notepad++
   * The folks at Atom.io for various code snippets
 
 ## Language support

@@ -1,0 +1,17 @@
+fileTypes: [
+  "stk"
+]
+# foldingStartMarker: "\\{\\s*$"
+# foldingStopMarker: "^\\s*\\}"
+name: "PTC Line Stock .stk"
+scopeName: "source.ptc-config.stk"
+patterns: [
+  {
+    comment: "Line Stock file for piping .stk"
+    match: "^\\b(?i:(STOCKNO|MATERIAL|GRADE|SECTION_TYPE|SHAPE|CORNER_TYPES|OD|WALL_THICKNESS|BEND_RADIUS|BEND_ANGLE|BEND_ARC_THRESHOLD|MAX_OVERALL_LENGTH|MAX_NUMBER_BENDS|MIN_BEND_SEPARATION|MIN_STRAIGHT_LENGTH_END|MIN_BEND_RADIUS|MAX_BEND_RADIUS|MIN_BEND_ANGLE|MAX_BEND_ANGLE|WT_LEN|MITER_CUT_LEN|MITER_CUT_NUM|X_SECTION_TYPE|RECTANGULAR_HEIGHT|RECTANGULAR_WIDTH|RECTANGULAR_ANGLE|BEND_TABLE_NAME|MIN_BRANCH_SEPARATION|MIN_BRANCH_ANGLE|MAX_SEGMENT_LENGTH|MIN_SEGMENT_LENGTH))\\b"
+    name: "keyword.other.start.stk"
+  },
+  {
+    include: "source.ptc-config"
+  }
+]
