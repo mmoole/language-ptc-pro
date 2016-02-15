@@ -4,7 +4,7 @@ fileTypes: [
 # foldingStartMarker: "\\{\\s*$"
 # foldingStopMarker: "^\\s*\\}"
 name: "PTC ModelCheck .mcr"
-scopeName: "source.ptc-config.mcr"
+scopeName: "text.ptc-config.mcr"
 patterns: [
   {
     comment: "Error definition"
@@ -17,9 +17,9 @@ patterns: [
     name: "warning.mcr"
   },
   {
-    include: "source.ptc-config"
+    include: "text.ptc-config"
   },
   {
-    include: "source.ptc-config-modelcheck"
+    include: "text.ptc-config-modelcheck"
   }
 ]

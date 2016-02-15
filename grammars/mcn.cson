@@ -4,7 +4,7 @@ fileTypes: [
 # foldingStartMarker: "\\{\\s*$"
 # foldingStopMarker: "^\\s*\\}"
 name: "PTC ModelCheck .mcn"
-scopeName: "source.ptc-config.mcn"
+scopeName: "text.ptc-config.mcn"
 patterns: [
   {
     comment: "Configuration Options for Constant Configuration Files .mcn"
@@ -17,9 +17,9 @@ patterns: [
     name: "keyword.other.start.hidden.mcn"
   },
   {
-    include: "source.ptc-config"
+    include: "text.ptc-config"
   },
   {
-    include: "source.ptc-config-modelcheck"
+    include: "text.ptc-config-modelcheck"
   }
 ]

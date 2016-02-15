@@ -15,7 +15,7 @@ fileTypes: [
 # foldingStartMarker: ""
 # foldingStopMarker: "^\\s*\\}"
 name: "PTC Creo Trail File"
-scopeName: "source.ptc-config.trail"
+scopeName: "text.ptc-config.trail"
 patterns: [
   {
     comment: "messages"
@@ -28,6 +28,6 @@ patterns: [
     name: "keyword.function.entity.ui.trail"
   },
   {
-    include: "source.ptc-config"
+    include: "text.ptc-config"
   }
 ]

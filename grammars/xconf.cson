@@ -2,7 +2,7 @@ fileTypes: [
   "xconf"
 ]
 name: "xconf"
-scopeName: "text.xml.xconf"
+scopeName: "text.xml"
 patterns: [
   {
     comment: "include built-in XML grammar since these are XML style files, too"

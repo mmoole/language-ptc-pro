@@ -2,7 +2,7 @@
 fileTypes: [
 ]
 name: "PTC-config ModelCheck"
-scopeName: "source.ptc-config-modelcheck"
+scopeName: "text.ptc-config-modelcheck"
 patterns: [
   {
     match: "^(#|!).*$"

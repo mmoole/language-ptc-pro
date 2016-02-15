@@ -4,7 +4,7 @@ fileTypes: [
 # foldingStartMarker: "\\{\\s*$"
 # foldingStopMarker: "^\\s*\\}"
 name: "PTC ModelCheck .mcq"
-scopeName: "source.ptc-config.mcq"
+scopeName: "text.ptc-config.mcq"
 patterns: [
   {
     comment: "Configuration Options for Status Configuration Files .mcq"

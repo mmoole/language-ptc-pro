@@ -4,7 +4,7 @@ fileTypes: [
 # foldingStartMarker: "\\{\\s*$"
 # foldingStopMarker: "^\\s*\\}"
 name: "PTC ModelCheck .mcc"
-scopeName: "source.ptc-config.mcc"
+scopeName: "text.ptc-config.mcc"
 patterns: [
   {
     comment: "Configuration Options for condition.mcc"
@@ -34,9 +34,9 @@ patterns: [
   },
 
   {
-    include: "source.ptc-config"
+    include: "text.ptc-config"
   },
   {
-    include: "source.ptc-config-modelcheck"
+    include: "text.ptc-config-modelcheck"
   }
 ]

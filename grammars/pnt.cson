@@ -4,7 +4,7 @@ fileTypes: [
 # foldingStartMarker: ""
 # foldingStopMarker: "^\\s*\\}"
 name: "PTC pentable.pnt"
-scopeName: "source.ptc-config.pnt"
+scopeName: "text.ptc-config.pnt"
 patterns: [
   {
     match: "^\\b(?i:(pen\ [1-8]))\\b"
@@ -19,6 +19,6 @@ patterns: [
     name: "unit.variable.parameter.function.pnt"
   },
   {
-    include: "source.ptc-config"
+    include: "text.ptc-config"
   }
 ]

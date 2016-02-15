@@ -2,17 +2,17 @@ fileTypes: [
   "pro"
   "sup"
 ]
-foldingStartMarker: "^mapkey\ [a-zA-Z]+\\?$"
-foldingStopMarker: "^mapkey\\(continued\\)\ \.*;\$" # FIXME doesnt seem to work
+foldingStartMarker: "^mapkey\ ([\s\S])+\\\?$"
+foldingStopMarker: "^(\ )?mapkey\\(continued\\)\ .+\;$" # FIXME doesnt seem to work
 name: "PTC config.pro"
-scopeName: "source.ptc-config.pro"
+scopeName: "text.ptc-config.pro"
 patterns: [
   {
     match: "^(?i:(mapkey\ ))"
     name: "keyword.other.macro.mapkey.pro"
   },
   {
-    match: "^(?i:(mapkey\\(continued\\)\ ))"
+    match: "^(\ )?(?i:(mapkey\\(continued\\)\ ))"
     name: "keyword.other.macro.mapkey.continued.pro"
   },
   {
@@ -29,6 +29,6 @@ patterns: [
     name: "keyword.other.hidden.pro"
   },
   {
-    include: "source.ptc-config"
+    include: "text.ptc-config"
   }
 ]

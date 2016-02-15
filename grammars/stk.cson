@@ -4,7 +4,7 @@ fileTypes: [
 # foldingStartMarker: "\\{\\s*$"
 # foldingStopMarker: "^\\s*\\}"
 name: "PTC Line Stock .stk"
-scopeName: "source.ptc-config.stk"
+scopeName: "text.ptc-config.stk"
 patterns: [
   {
     comment: "Line Stock file for piping .stk"
@@ -12,6 +12,6 @@ patterns: [
     name: "keyword.other.start.stk"
   },
   {
-    include: "source.ptc-config"
+    include: "text.ptc-config"
   }
 ]

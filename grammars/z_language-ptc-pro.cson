@@ -2,7 +2,7 @@
 fileTypes: [
 ]
 name: "PTC-config various"
-scopeName: "source.ptc-config"
+scopeName: "text.ptc-config"
 patterns: [
   {
     match: "^(#|!).*$"
@@ -37,10 +37,15 @@ patterns: [
     match: '(?i:(\%([\w\d]+)\%))'
     name: 'constant.storage.type.string.variable.parameter.pro'
   },
-#  {
-#    comment: 'path for files or folders'
-#    match: '\\b(?:i([\w]\:|\\)(\\[a-z_\-\s0-9\.]+)+\.(dtl|prt|asm|drw|html)$)\\b'    # FIXME this gives errors:
-#    name: 'storage.type.string.file.folder.path.pro'
-#  },
+  {
+    comment: 'path for files'
+    match: '(\\\\|(\\w\\:))(\\\\[a-zA-Z_\\-\\s0-9\\.]+)+\\.((dtl|prt|asm|drw|html)$)'
+    name: 'storage.type.string.file.path.pro'
+  },
+  {
+    comment: 'path for folders'
+    match: '(\\\\|(\\w\\:))(\\\\[a-zA-Z_\\-\\s0-9\\.]+)+$'
+    name: 'storage.type.folder.path.pro'
+  },
 
 ]
