@@ -28,11 +28,14 @@ Based on / Thanks a lot to
 
 ## Language support
 
-  ▶︎ config.pro, supports mapkey folding  
+  ▶︎ config.pro, mapkey folding if indented  
   ▶︎ detail.dtl  
   ▶︎ modelcheck files  
   ▶︎ trail files  
-  ▶︎ xconf files (built-in xml)   
+  ▶︎ xconf, dip, dop, qry files (built-in xml)   
+  ▶︎ stk files   
+  ▶︎ pnt files   
+  ▶︎ scl files   
   … ...   
   … more detailed highlighting     
 
