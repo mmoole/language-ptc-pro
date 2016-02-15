@@ -1,0 +1,11 @@
+fileTypes: [
+  "qry"
+]
+name: "qry"
+scopeName: "text.xml.qry"
+patterns: [
+  {
+    comment: "include built-in XML grammar since these are XML style files, too"
+    include: "text.xml"
+  }
+]
