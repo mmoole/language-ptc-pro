@@ -1,0 +1,11 @@
+fileTypes: [
+  "qml"
+]
+name: "PTC Report Template"
+scopeName: "text.xml"
+patterns: [
+  {
+    comment: "include built-in XML grammar since these are XML style files, too"
+    include: "text.xml"
+  }
+]
