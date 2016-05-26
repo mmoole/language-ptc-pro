@@ -1,3 +1,5 @@
+{WorkspaceView} = require 'atom'
+
 describe "ptc-pro grammar", ->
   grammar = null
 
