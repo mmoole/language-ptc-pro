@@ -2,26 +2,26 @@
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
-@import "ui-variables";
+@import "syntax-variables";
 
-atom-text-editor::shadow .ptc-config {
+atom-text-editor,atom-text-editor .ptc-config {
 
-  .hidden {
+  .syntax--hidden {
      font-style: italic;
   }
-  .important {
+  .syntax--important {
      font-weight: bold;
   }
-  .warning.mcr {
+  .syntax--warning.mcr {
     color: yellow;
   }
-  .error.mcr {
+  .syntax--error.mcr {
     color: red;
   }
-  .green.mcq {
+  .syntax--green.mcq {
     color: green;
   }
-  .yellow.mcq {
+  .syntax--yellow.mcq {
     color: yellow;
   }
 
